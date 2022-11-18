@@ -1,13 +1,19 @@
-import React from 'react';
-import {SafeAreaView} from 'react-native';
-import Home from './src/telas/Home';
+import React from 'react'
+import { SafeAreaView, StyleSheet } from 'react-native'
+import Home from './src/telas/Home'
 
 function App() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={estilos.tela}>
       <Home />
     </SafeAreaView>
-  );
+  )
 }
 
-export default App;
+const estilos = StyleSheet.create({
+  tela: {
+    flex: 1 //expande verticalmente o máximo que conseguir
+  }
+})
+
+export default App
